@@ -43,26 +43,26 @@ Try your best to answer each question on your own before looking up the answer o
       constructor(props){                           
         super(props)
         this.state = {
-          recipes:                                                              ### OBJECTS KEYS NOT IN []
+          recipes:                                                              ### OBJECTS KEYS NOT IN ARRAY
             {name: 'Meatballs'},
             {name: 'Mac & Cheese'}
       
         }
       }
 
-      render() {                                                                ### STATES ARE NOT DECONSTRUCTED
+      render() {                                                    
     
         return (
     
-          let recipes = this.state.recipes.map(function(recipe){                ### JSX NOT IN {} SO IT WILL BE AN ERROR
+          let recipes = this.state.recipes.map(function(recipe){                ### THIS IS NOT HTML CODE WILL THROW AN ERROR
             return(
               <li key={recipe.name}>{recipe.name}</li>
             )
-          })
+          })  
     
           <ul>
             {recipes}
-          </ul>                                                                 ### ENTIRE HTML IS NOT IN A HTML ELEMENT AND YOU CAN ONLY RETURN ONE HTML ELEMENT
+          </ul>                                                                 ### THERE ARE MUILTIPLE HTML ELEMENTS AND YOU CAN ONLY RETURN ONE HTML ELEMENT
         );
       }
     }
@@ -86,19 +86,15 @@ Try your best to answer each question on your own before looking up the answer o
       }
 
       render() {
-        let { recipes } = this.state
-        return (
-        <div>    
-          {let recipes = this.state.recipes.map(function(recipe){
+          let recipes = this.state.recipes.map((recipe)=>{
             return(
-              <li key={recipe.name[0]}>{recipe.name[1]}</li>
+              <li key={recipe.name}>{recipe.name}</li>
             )
-          })}
-    
+          })
+        return (
           <ul>
             {recipes}
           </ul>
-        </div>
         );
       }
     }

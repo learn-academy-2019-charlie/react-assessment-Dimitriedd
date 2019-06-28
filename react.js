@@ -33,7 +33,7 @@ indexFinder(stuffArray)
 // 3. Basic sorting: Find the cheapest price -- you are given a list of prices and need to find the signle lowest price from the array. Write a function that takes in an array of numbers, and returns the lowest price
 console.log("3.")
 
-var prices = [2,6,25,6,7,2,8]
+var prices = [15,2,6,25,6,7,2,8]
 var steal = function(arr){
   // your logic here
   let newArr = arr.sort((a,b)=>{return a-b})
