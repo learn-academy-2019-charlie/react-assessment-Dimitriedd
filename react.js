@@ -36,7 +36,7 @@ console.log("3.")
 var prices = [2,6,25,6,7,2,8]
 var steal = function(arr){
   // your logic here
-  let newArr = arr.sort()
+  let newArr = arr.sort((a,b)=>{return a-b})
   return `The lowest price is $${newArr[0]}`  
 }
 console.log(steal(prices))
