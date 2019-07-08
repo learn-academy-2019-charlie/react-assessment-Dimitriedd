@@ -116,7 +116,8 @@ Try your best to answer each question on your own before looking up the answer o
     and effects all instances of that state when set.
  
  //Googled Answer
- 
+  "state is an object that represents the parts of the app that can change. Each component can maintain its own state, which lives in an object called this.state"
+  - googled answer
  
  #### 8. What is the difference between component state and props? Your answer should include a short explanation of both.
  
@@ -126,8 +127,8 @@ Try your best to answer each question on your own before looking up the answer o
     a prop is varible that was passed through to a compenet when it was called you cannot change a prop but you can set a state
  
  //Googled Answer
- 
-   
+ "In a React component, props are variables passed to it by its parent component. State on the other hand is still variables, but directly initialized and managed by the component. ... Of course a component can also initialize the state without looking at props."
+   - googled answer
 #### 9. Write a paragraph or so about your experience with building tic-tac-toe. Some topics to start with might be: things you learned about yourself, concepts from React that stood out to you, something about pair programming (if you paired), or the experience of building something in code from scratch.
 
         When we were coding tic-tac-toe the hardest thing was not the logic.
